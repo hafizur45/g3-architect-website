@@ -137,6 +137,86 @@ margin-top: 10px;
 
 }
 
+.sponsor{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.sponsor-card{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+.s-card img{
+    width: 150px;
+}
+footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color:#FFF4E7;
+   
+    height: 70px;
+   
+
+   
+    align-items: center;
+    margin-bottom: 100px;
+    border-radius: 8px;
+    
+   
+}
+.features{
+    display: flex;
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.feature-content .f-card{
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+margin-bottom: 20px;
+padding: 30px;
+}
+.f-card h4{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-img img{
+    height: 70%;
+    margin-left: 90PX;
+   
+}
+.badge{
+    border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+width: 300px;
+
+padding: 30px;
+text-align: center;
+position: relative;
+bottom: 100px;
+}
+
+.badge h2{
+    font-size: 3rem;
+    margin: 0;
+}
+
+.badge p{
+    font-size: 1.5rem;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     header{
@@ -145,7 +225,7 @@ margin-top: 10px;
     .nav-title{
         margin-bottom: 20px;
     }
-    nav{
+    nav,.facts-card-container,.features,.sponsor-card{
         flex-direction: column;
     }
     main{
@@ -161,19 +241,120 @@ margin-top: 10px;
         padding-left: 20px;
         padding-right: 20px;
     }
+    .feature-content{
+        text-align: center;
+        padding-right: 5px;
+       
+    }
+    .feature-content .f-card{
+        width: 85%;
+        text-align: center;
+      
+    }
+    .feature-img img{
+        width: 100%;
+        margin: 0;
+    }
+    .badge{
+        position: static;
+        width: 85%;
+   
     
+    }
+    .facts{
+        text-align: center;
+        padding: 10px;
+    }
+    .teams-content{
+        margin-top: 50px;
+        text-align: center;
+       
+    }
+    .sponsor{
+        width: 100%;
+    }
+    
+    .s-card img{
+          width: 90%;
+          margin-bottom: 100px;
+          margin-left: 20PX;
+          margin-right: 10PX;
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+    }
     
 }
 
 /* tablet or medium device */
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header{
+        width: 100%;
         padding: 20px;
+       
     }
     .nav-title{
         margin-bottom: 20px;
     }
-    nav,.teams-container{
+    nav,.facts-card-container,.features,.sponsor-card{
         flex-direction: column;
     }
+    main{
+        margin: 0 auto;
+    }
+    .teams-container{
+        flex-direction: column;
+    }
+    .teams-img-container{
+        grid-template-columns: 1fr;
+    }
+    .teams-content{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .feature-content{
+        text-align: center;
+        padding-right: 5px;
+       
+    }
+    .feature-content .f-card{
+        width: 100%;
+        text-align: center;
+      
+    }
+    .feature-img img{
+        width: 100%;
+        margin: 0;
+    }
+    .badge{
+        position: static;
+        width: 100%;
+   
+    
+    }
+    .facts{
+        text-align: center;
+        padding: 10px;
+    }
+    .teams-content{
+        margin-top: 50px;
+        text-align: center;
+       
+    }
+    .sponsor{
+        width: 100%;
+    }
+    
+    .s-card img{
+          width: 90%;
+          margin-bottom: 100px;
+          margin-left: 20PX;
+          margin-right: 10PX;
+    }
+    footer{
+        width: 80%;
+        text-align: center;
+    }
+    
 }
